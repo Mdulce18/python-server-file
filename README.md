@@ -1,12 +1,16 @@
 # python-server-file
 Generic flask server
 
-To test:
-''' 
-Upload:
+To test in curl:
+Upload files:
+```
 $ curl -F file=@myfile.txt 0.0.0.0:8000/files_up
+```
 Check files:
+```
 $ curl 0.0.0.0:8000/payloads
-Download:
+```
+Download files:
+```
 $ curl 0.0.0.0:8000/payloads/bash.sh --output dd.sh 
-'''
+```
