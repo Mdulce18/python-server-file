@@ -13,5 +13,6 @@ $ curl 0.0.0.0:8000/payloads
 Download files:
 ```
 $ curl 0.0.0.0:8000/payloads/bash.sh --output dd.sh
-curl -o dd.sh 0.0.0.0:8000/payloads/bash.sh
+
+$ curl -o dd.sh 0.0.0.0:8000/payloads/bash.sh
 ```
