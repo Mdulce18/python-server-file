@@ -39,6 +39,13 @@ def post_file():
       f.save(os.path.join(UPLOAD_DIRECTORY,secure_filename(f.filename)))
       return 'file uploaded successfully', 201
 
+@api.route("/json", methods=["POST"])
+def postJsonHandler():
+    print (request.is_json)
+    content = request.get_json()
+    print (content)
+    print(request.data)
+    return 'JSON posted'
 
 if __name__ == "__main__":
-    api.run(host= '0.0.0.0',debug=False, port=8000)
+    api.run(host= '0.0.0.0',debug=False, port=4001)
